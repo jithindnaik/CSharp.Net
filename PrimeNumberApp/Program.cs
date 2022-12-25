@@ -1,20 +1,18 @@
-﻿class PrimeNumber
+﻿using System;
+
+class PrimeNumber
 {
 
     public int GetRangeUntil()
     {
-        int numChoice;
         Console.WriteLine("Enter the range of number to display for prime starting from 0");
-        numChoice = Int32.Parse(s: Console.ReadLine());
-        return numChoice;
+        return Int32.Parse(s: Console.ReadLine());
     }
 
     public int GetUserInputNumber()
     {
-        int numChoice;
         Console.WriteLine("Enter the number to be checked for Prime");
-        numChoice = Int32.Parse(s: Console.ReadLine());
-        return numChoice;
+        return Int32.Parse(s: Console.ReadLine());
     }
 
     public bool CheckNumberIsPrimeOrNot(int number)
@@ -26,19 +24,15 @@
         }
         else
         {
-            var factor = Convert.ToInt32(number / 2);
-
-            for (var i = 1; i <= factor; i++)
+            if (number == 2 || number == 3 || number == 5)
             {
-                if (factor == 1)
-                {
-                    isPrime = true;
-                    break;
-                }
-                if ((number % 2) == 0 || (number % 3) == 0)
+                isPrime = true;
+            }
+            else
+            {
+                if ((number % 2) == 0 || (number % 3) == 0 || (number % 5) == 0)
                 {
                     isPrime = false;
-                    break;
                 }
             }
         }
@@ -58,7 +52,8 @@ class Program: PrimeNumber
         //if (isPrimeNumber)
         //{
         //    Console.WriteLine($"Number {numberEntered} is PrimeNumber");
-        //} else
+        //}
+        //else
         //{
         //    Console.WriteLine($"Number {numberEntered} is not a PrimeNumber");
         //}
@@ -66,7 +61,7 @@ class Program: PrimeNumber
         PrimeNumber p = new PrimeNumber();
         int numberRange = p.GetRangeUntil();
 
-        for (var range=0; range < numberRange; range++)
+        for (var range = 0; range <= numberRange; range++)
         {
             if (p.CheckNumberIsPrimeOrNot(range))
             {
