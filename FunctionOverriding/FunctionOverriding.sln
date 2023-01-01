@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionOverriding", "FunctionOverriding.csproj", "{AD811504-7614-4143-B2A7-AAADDE1DE84C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD811504-7614-4143-B2A7-AAADDE1DE84C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD811504-7614-4143-B2A7-AAADDE1DE84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD811504-7614-4143-B2A7-AAADDE1DE84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD811504-7614-4143-B2A7-AAADDE1DE84C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9875DCE6-CA38-41C0-8957-7BB1BE321C1D}
+	EndGlobalSection
+EndGlobal
